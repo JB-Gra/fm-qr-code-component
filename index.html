@@ -20,13 +20,14 @@
       height: 100dvh;
       background: hsl(212, 45%, 89%);
       font-family: 'Outfit', Arial, sans-serif;
+      color: hsl(218, 44%, 22%);
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-flow: column;
     }
     .qrcard {
-      width: 85%;
+      width: 20rem;
       background: hsl(0, 0%, 100%);
       margin: 2rem 1rem;
       padding: 1.5rem 1rem;
@@ -36,6 +37,7 @@
       align-items: center;
       justify-content: center;
       flex-flow: column;
+      box-shadow: 0 1px 30px hsl(212, 45%, 89%);
     }
     .qrcard__image {
       width: 19rem;
@@ -43,6 +45,10 @@
     }
     .qrcard__text {
       width: 84%;
+    }
+    .footer__link {
+      color: dodgerblue;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -59,7 +65,7 @@
 </main>
 
 <footer class="footer">
-  <p class="footer__credits">Coded by Jazmin Grajales</p>
+  <p class="footer__credits">Coded by <a href="https://github.com/JB-Gra" class="footer__link">Jazmin Grajales</a></p>
 </footer>
 </body>
 </html>
