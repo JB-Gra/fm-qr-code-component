@@ -5,24 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   
   <title>Jazmin Grajales | QR code component</title>
 
   <style>
-    
+    html, body {
+      margin: 0;  
+    }
+    body {
+      height: 100dvh;
+      background: hsl(212, 45%, 89%);
+      font-family: 'Outfit', Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-flow: column;
+    }
+    .qrcard {
+      width: 85%;
+      background: hsl(0, 0%, 100%);
+      margin: 2rem 1rem;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+    }
+    .qrcard__image {
+      width: 19rem;
+      border-radius: 1rem;
+    }
+    .qrcard__text {
+      width: 84%;
+    }
   </style>
 </head>
 <body>
 
-<main>
+<main class="qrcard">
+  <img src="images/image-qr-code.png" alt="QR code" class="qrcard__image">
 
-  <img src="images/image-qr-code.png" alt="QR code">
+  <div class="qrcard__text">
+    <h3 class="qrcard__title">Improve your front-end skills by building projects</h3>
 
-  <h3>Improve your front-end skills by building projects</h3>
-
-  <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-
+    <p class="qrcard__detail">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
 </main>
 
+<footer class="footer">
+  <p class="footer__credits">Coded by Jazmin Grajales</p>
+</footer>
 </body>
 </html>
